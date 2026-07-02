@@ -1,0 +1,261 @@
+/* ============================================================
+   SOLSERE — CSS Principal
+   Reset + Variables + Utilitarios base
+   ============================================================ */
+
+/* ---- Reset ---- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-crema);
+  color: var(--color-texto);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* ---- CSS Custom Properties ---- */
+:root {
+  /* Paleta Botánica */
+  --color-verde-oscuro: #2D5A27;
+  --color-verde-medio: #4A7C40;
+  --color-verde-claro: #8DB87A;
+  --color-sage: #B8C9A8;
+  --color-crema: #F9F5EE;
+  --color-dorado: #C9A84C;
+  --color-rosa-suave: #F2D4CC;
+  --color-texto: #2C2C2C;
+  --color-texto-suave: #5A5A5A;
+  --color-blanco: #FFFFFF;
+
+  /* Tipografía */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Lato', system-ui, sans-serif;
+
+  /* Espaciado */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2.5rem;
+  --spacing-xl: 4rem;
+  --spacing-2xl: 6rem;
+
+  /* Bordes y sombras */
+  --border-radius-card: 1rem;
+  --border-radius-btn: 0.5rem;
+  --shadow-card: 0 4px 20px rgba(45, 90, 39, 0.08);
+  --shadow-card-hover: 0 8px 30px rgba(45, 90, 39, 0.15);
+
+  /* Transiciones */
+  --transition-base: 0.3s ease;
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-padding: 1.25rem;
+}
+
+/* ---- Tipografía ---- */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  line-height: 1.25;
+  color: var(--color-verde-oscuro);
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+h2 { font-size: clamp(1.75rem, 4vw, 2.75rem); }
+h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
+
+em {
+  font-style: italic;
+  color: var(--color-verde-medio);
+}
+
+/* ---- Utilitarios ---- */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.section-padding {
+  padding-block: var(--spacing-2xl);
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  text-align: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--color-texto-suave);
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-lg);
+  max-width: 60ch;
+  margin-inline: auto;
+}
+
+/* ---- Botones ---- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  border-radius: var(--border-radius-btn);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all var(--transition-base);
+  cursor: pointer;
+  min-height: 44px;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: var(--color-verde-oscuro);
+  color: var(--color-blanco);
+  border: 2px solid var(--color-verde-oscuro);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background-color: var(--color-verde-medio);
+  border-color: var(--color-verde-medio);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(45, 90, 39, 0.3);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-verde-oscuro);
+  border: 2px solid var(--color-verde-oscuro);
+}
+
+.btn-outline:hover,
+.btn-outline:focus-visible {
+  background-color: var(--color-verde-oscuro);
+  color: var(--color-blanco);
+  transform: translateY(-2px);
+}
+
+.btn-whatsapp {
+  background-color: #25D366;
+  color: var(--color-blanco);
+  border: 2px solid #25D366;
+}
+
+.btn-whatsapp:hover,
+.btn-whatsapp:focus-visible {
+  background-color: #1ebe57;
+  border-color: #1ebe57;
+  transform: translateY(-2px);
+}
+
+/* ---- Focus visible global ---- */
+:focus-visible {
+  outline: 3px solid var(--color-dorado);
+  outline-offset: 3px;
+}
+
+/* ---- Scroll margin para anchors con header sticky ---- */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* ---- Responsive Improvements ---- */
+@media (max-width: 1024px) {
+  :root {
+    --spacing-2xl: 4rem;
+    --spacing-xl: 3rem;
+    --spacing-lg: 2rem;
+  }
+
+  .container {
+    padding-inline: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --spacing-2xl: 3rem;
+    --spacing-xl: 2.5rem;
+    --spacing-lg: 1.75rem;
+    --container-padding: 1rem;
+  }
+
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.4rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1rem, 2vw, 1.4rem); }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --spacing-2xl: 2rem;
+    --spacing-xl: 1.75rem;
+    --spacing-lg: 1.25rem;
+    --spacing-md: 1rem;
+  }
+
+  h1 { font-size: clamp(1.5rem, 3.5vw, 2.2rem); }
+  h2 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  h3 { font-size: clamp(0.95rem, 1.8vw, 1.25rem); }
+
+  .section-padding {
+    padding-block: var(--spacing-xl);
+  }
+
+  .btn {
+    padding: 0.7rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+}

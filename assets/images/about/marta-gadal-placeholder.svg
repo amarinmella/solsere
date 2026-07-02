@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none">
+  <!-- Fondo -->
+  <rect width="400" height="500" rx="16" fill="#EEF4E8"/>
+  <!-- Figura abstracta persona -->
+  <circle cx="200" cy="165" r="75" fill="#B8C9A8" opacity="0.8"/>
+  <path d="M80,420 Q80,300 200,300 Q320,300 320,420" fill="#4A7C40" opacity="0.4"/>
+  <!-- Decoración botánica -->
+  <path d="M30,400 Q60,350 90,370 Q70,400 30,400Z" fill="#8DB87A" opacity="0.5"/>
+  <path d="M370,380 Q340,330 310,355 Q330,390 370,380Z" fill="#8DB87A" opacity="0.5"/>
+  <path d="M15,200 Q40,170 60,190 Q45,215 15,200Z" fill="#B8C9A8" opacity="0.6"/>
+  <path d="M385,250 Q360,225 345,248 Q360,270 385,250Z" fill="#B8C9A8" opacity="0.6"/>
+  <!-- Florcitas -->
+  <circle cx="50" cy="80" r="18" fill="#F2D4CC" opacity="0.6"/>
+  <circle cx="50" cy="80" r="9" fill="#C9A84C" opacity="0.5"/>
+  <circle cx="355" cy="120" r="14" fill="#F2D4CC" opacity="0.6"/>
+  <circle cx="355" cy="120" r="7" fill="#C9A84C" opacity="0.5"/>
+  <!-- Texto placeholder -->
+  <text x="200" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#5A5A5A" opacity="0.7">Foto de Marta Gadal</text>
+  <text x="200" y="488" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#8DB87A" opacity="0.8">Reemplazar antes del deploy</text>
+</svg>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Solsere — Bienestar que florece desde adentro. Clases Online, Terapias Florales y Enfoque Integrativo con Marta Gadal. 21 años acompañando tu bienestar.">
+  <title>Solsere — Bienestar que florece desde adentro</title>
+
+  <!-- Preconnect Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Calendly Widget CSS -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components/nav.css">
+  <link rel="stylesheet" href="css/components/hero.css">
+  <link rel="stylesheet" href="css/components/services.css">
+  <link rel="stylesheet" href="css/components/about.css">
+  <link rel="stylesheet" href="css/components/testimonials.css">
+  <link rel="stylesheet" href="css/components/contact.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+  <link rel="stylesheet" href="css/components/whatsapp-fab.css">
+</head>
+<body>
+
+  <!-- ==================== NAVEGACIÓN ==================== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="#inicio" class="nav-logo" aria-label="Solsere — Inicio">
+        <span class="logo-text">SolSere</span>
+        <span class="logo-tagline">Bienestar que florece</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden aria-hidden="true">
+      <label for="nav-toggle" class="hamburger" aria-label="Abrir menú de navegación">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav-menu" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#quienes-somos" class="nav-link">Quiénes Somos</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#testimonios" class="nav-link">Testimonios</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-parallax-bg">
+      <img src="assets/images/hero/flor-1.svg" alt="" aria-hidden="true" class="parallax-el" data-parallax="0.3" loading="eager">
+      <img src="assets/images/hero/flor-2.svg" alt="" aria-hidden="true" class="parallax-el" data-parallax="0.15" loading="eager">
+      <img src="assets/images/hero/hoja-1.svg" alt="" aria-hidden="true" class="parallax-el" data-parallax="0.2" loading="eager">
+      <img src="assets/images/hero/hoja-2.svg" alt="" aria-hidden="true" class="parallax-el parallax-right" data-parallax="0.25" loading="eager">
+    </div>
+    <div class="container hero-content">
+      <p class="hero-pretitle">21 años floreciendo bienestar contigo</p>
+      <h1 class="hero-title">Bienestar que florece<br><em>desde adentro</em></h1>
+      <p class="hero-claim">Tu bienestar es único,<br>tu camino también.</p>
+      <div class="hero-ctas">
+        <a href="#servicios" class="btn btn-primary">Conoce mis servicios</a>
+        <button class="btn btn-outline" onclick="openCalendly(CALENDLY_LINK_CLASES)">Agenda tu hora</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICIOS ==================== -->
+  <section id="servicios" class="services-section">
+    <div class="container">
+      <h2 class="section-title">¿En qué puedo acompañarte?</h2>
+      <p class="section-subtitle">Tres pilares de bienestar, una misma mirada humana e integrativa.</p>
+
+      <div class="services-grid">
+
+        <!-- Clases Online -->
+        <article class="service-card" id="clases-online">
+          <div class="service-card__icon">
+            <img src="assets/icons/clases-online.svg" alt="" aria-hidden="true">
+          </div>
+          <h3 class="service-card__title">Clases Online</h3>
+          <p class="service-card__subtitle">con acompañamiento integral</p>
+          <p class="service-card__quote">"Aprender es más que estudiar contenidos: es crecer, entenderse y avanzar."</p>
+
+          <div class="asignaturas">
+            <span class="asignatura"><img src="assets/icons/fisica.svg" alt="Física">Física</span>
+            <span class="asignatura"><img src="assets/icons/quimica.svg" alt="Química">Química</span>
+            <span class="asignatura"><img src="assets/icons/biologia.svg" alt="Biología">Biología</span>
+            <span class="asignatura"><img src="assets/icons/matematica.svg" alt="Matemática">Matemática</span>
+          </div>
+
+          <ul class="service-card__includes">
+            <li>Contenidos académicos claros y personalizados</li>
+            <li>Técnicas de estudio, organización y hábitos</li>
+            <li>Preparación de pruebas y apoyo escolar</li>
+            <li>Regulación emocional si lo necesitas</li>
+            <li>Coaching educativo</li>
+          </ul>
+
+          <div class="service-card__price">
+            <span class="price-amount">$80.000</span>
+            <span class="price-detail">paquete 6 horas · hasta 2 alumnos</span>
+          </div>
+          <button class="btn btn-primary service-card__cta" onclick="openCalendly(CALENDLY_LINK_CLASES)">
+            Agenda tu hora
+          </button>
+        </article>
+
+        <!-- Terapias Florales -->
+        <article class="service-card service-card--featured" id="terapias-florales">
+          <div class="service-card__icon">
+            <img src="assets/icons/terapias-florales.svg" alt="" aria-hidden="true">
+          </div>
+          <h3 class="service-card__title">Terapias Florales</h3>
+          <p class="service-card__subtitle">La Senda Floral · EFT Tapping + Flores de Bach</p>
+
+          <p class="service-card__desc">Equilibrio emocional, manejo del estrés, ansiedad y miedos. 21 años floreciendo bienestar contigo.</p>
+
+          <ul class="service-card__benefits">
+            <li>✦ Equilibrio emocional</li>
+            <li>✦ Salud y bienestar</li>
+            <li>✦ Mente en paz</li>
+            <li>✦ Confianza</li>
+            <li>✦ Sanación</li>
+            <li>✦ Cuerpo</li>
+          </ul>
+
+          <ul class="service-card__includes">
+            <li>2 atenciones mensuales</li>
+            <li>Material de trabajo incluido</li>
+            <li>Atención personalizada con amor y dedicación</li>
+            <li>Envío a todo Chile por Starken (costo por pagar)</li>
+          </ul>
+
+          <div class="service-card__price">
+            <span class="price-amount">$35.000</span>
+            <span class="price-detail">mensual · 2 atenciones + material</span>
+          </div>
+          <button class="btn btn-primary service-card__cta" onclick="openCalendly(CALENDLY_LINK_FLORALES)">
+            Agenda tu hora
+          </button>
+        </article>
+
+        <!-- Enfoque Integrativo -->
+        <article class="service-card" id="enfoque-integrativo">
+          <div class="service-card__icon">
+            <img src="assets/icons/enfoque-integrativo.svg" alt="" aria-hidden="true">
+          </div>
+          <h3 class="service-card__title">Enfoque Integrativo</h3>
+          <p class="service-card__subtitle">Educación · Bienestar · Crecimiento</p>
+
+          <ul class="service-card__includes">
+            <li>Más de 21 años de experiencia</li>
+            <li>Mirada humana, cercana e integrativa</li>
+            <li>Acompañamiento para estudiantes, familias y personas</li>
+            <li>Un espacio para cuidar tu bienestar físico, emocional y energético</li>
+          </ul>
+
+          <a href="https://wa.me/56941870321" target="_blank" rel="noopener" class="btn btn-outline service-card__cta">
+            Conversemos
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== QUIÉNES SOMOS ==================== -->
+  <section id="quienes-somos" class="about-section">
+    <div class="container about-grid">
+      <div class="about-image">
+        <img src="assets/images/about/marta-gadal-placeholder.svg" alt="Marta Gadal — Profesora de Química, Coach Educativo y Especialista en Terapias Florales" loading="lazy" width="400" height="500">
+        <div class="about-badge">
+          <span class="badge-number">21</span>
+          <span class="badge-text">años de<br>experiencia</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <h2 class="section-title">Hola, soy <em>Marta Gadal</em></h2>
+        <p class="about-roles">Profesora de Química y Ciencias · Coach Educativo · Especialista en Terapias Florales y Bienestar Emocional Integrativo</p>
+        <p class="about-bio">Llevo 21 años acompañando a estudiantes, familias y personas en su camino hacia el bienestar. Mi mirada es humana, cercana e integrativa — porque creo que el aprendizaje y el bienestar emocional van siempre de la mano.</p>
+
+        <div class="credentials">
+          <h4 class="credentials-title">Formación en Terapias Florales</h4>
+          <ul class="credentials-list">
+            <li>Maestra en Reiki del Amor</li>
+            <li>Terapeuta EFT Tapping Nivel 1, 2, 3</li>
+            <li>Matrix Reimprinting (2019)</li>
+            <li>Diplomada en Terapia Floral Evolutiva (2011)</li>
+            <li>Problemas de Aprendizaje y Terapia Floral (2016)</li>
+            <li>Terapeuta Floral (2005)</li>
+            <li>Reiki Usui Shiki Ryoho Nivel I (2004)</li>
+          </ul>
+        </div>
+
+        <a href="#servicios" class="btn btn-primary">Conoce mis servicios</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIOS ==================== -->
+  <section id="testimonios" class="testimonials-section">
+    <div class="container">
+      <h2 class="section-title">Lo que dicen de mí</h2>
+      <div class="testimonials-grid">
+        <blockquote class="testimonial-card">
+          <p class="testimonial-text">"Marta tiene una forma de enseñar que va más allá de los contenidos. Mi hija no solo mejoró en Química, sino que recuperó la confianza en sí misma."</p>
+          <footer class="testimonial-author">
+            <strong>María José R.</strong>
+            <span>Apoderada</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p class="testimonial-text">"Las terapias florales me ayudaron a manejar el estrés del año escolar. Llegué sin saber nada de EFT y ahora es parte de mi rutina."</p>
+          <footer class="testimonial-author">
+            <strong>Catalina M.</strong>
+            <span>Estudiante universitaria</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p class="testimonial-text">"El enfoque de Marta es único. Cuida a la persona completa, no solo el rendimiento académico. Eso marca la diferencia."</p>
+          <footer class="testimonial-author">
+            <strong>Rodrigo P.</strong>
+            <span>Apoderado</span>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACTO ==================== -->
+  <section id="contacto" class="contact-section">
+    <div class="container contact-content">
+      <h2 class="section-title">Conversemos</h2>
+      <p class="contact-subtitle">¿Tienes dudas? ¿Quieres saber qué servicio es el más adecuado para ti?<br>Escríbeme directamente, con gusto te oriento.</p>
+      <div class="contact-actions">
+        <a href="https://wa.me/56941870321" target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Escríbeme por WhatsApp
+        </a>
+        <a href="mailto:contacto@solsere.com" class="btn btn-outline">
+          Enviar un email
+        </a>
+      </div>
+      <p class="contact-number">+56 9 4187 0321</p>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="logo-text">SolSere</span>
+        <p class="footer-tagline">Bienestar que florece desde adentro</p>
+      </div>
+      <nav class="footer-nav" aria-label="Navegación del footer">
+        <a href="#inicio">Inicio</a>
+        <a href="#quienes-somos">Quiénes Somos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="https://wa.me/56941870321" target="_blank" rel="noopener">+56 9 4187 0321</a>
+        <a href="https://www.solsere.com">www.solsere.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Solsere · Todos los derechos reservados</p>
+      <p>Desarrollado por <a href="https://www.innovaiastudio.com" target="_blank" rel="noopener">Innova IA Studio</a></p>
+    </div>
+  </footer>
+
+  <!-- ==================== WHATSAPP FAB ==================== -->
+  <a href="https://wa.me/56941870321" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- Calendly Widget JS -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+  <!-- Módulos JS -->
+  <script type="module" src="js/modules/smooth-scroll.js"></script>
+  <script type="module" src="js/modules/nav.js"></script>
+  <script type="module" src="js/modules/parallax.js"></script>
+  <script type="module" src="js/modules/calendly.js"></script>
+
+</body>
+</html>

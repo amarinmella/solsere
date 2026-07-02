@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <circle cx="32" cy="32" r="30" fill="#F2D4CC" opacity="0.4"/>
+  <!-- Flor central -->
+  <circle cx="32" cy="32" r="6" fill="#C9A84C" opacity="0.9"/>
+  <!-- Pétalos -->
+  <ellipse cx="32" cy="20" rx="4" ry="8" fill="#4A7C40" opacity="0.75" transform="rotate(0 32 32)"/>
+  <ellipse cx="32" cy="20" rx="4" ry="8" fill="#4A7C40" opacity="0.75" transform="rotate(45 32 32)"/>
+  <ellipse cx="32" cy="20" rx="4" ry="8" fill="#4A7C40" opacity="0.75" transform="rotate(90 32 32)"/>
+  <ellipse cx="32" cy="20" rx="4" ry="8" fill="#4A7C40" opacity="0.75" transform="rotate(135 32 32)"/>
+  <ellipse cx="32" cy="20" rx="4" ry="8" fill="#8DB87A" opacity="0.6" transform="rotate(22.5 32 32)"/>
+  <ellipse cx="32" cy="20" rx="4" ry="8" fill="#8DB87A" opacity="0.6" transform="rotate(67.5 32 32)"/>
+  <ellipse cx="32" cy="20" rx="4" ry="8" fill="#8DB87A" opacity="0.6" transform="rotate(112.5 32 32)"/>
+  <ellipse cx="32" cy="20" rx="4" ry="8" fill="#8DB87A" opacity="0.6" transform="rotate(157.5 32 32)"/>
+  <!-- Centro -->
+  <circle cx="32" cy="32" r="5" fill="#C9A84C"/>
+</svg>

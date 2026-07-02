@@ -1,0 +1,129 @@
+/* ============================================================
+   TESTIMONIOS
+   ============================================================ */
+
+.testimonials-section {
+  padding-block: var(--spacing-2xl);
+  background-color: var(--color-blanco);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+/* ---- Tarjeta testimonio ---- */
+.testimonial-card {
+  background-color: var(--color-crema);
+  border-radius: var(--border-radius-card);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  position: relative;
+  border: 1px solid transparent;
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.testimonial-card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-3px);
+  border-color: var(--color-sage);
+}
+
+.testimonial-card::before {
+  content: "\201C";
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  color: var(--color-sage);
+  line-height: 1;
+  position: absolute;
+  top: 0.5rem;
+  left: 1.25rem;
+  pointer-events: none;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  color: var(--color-texto);
+  line-height: 1.7;
+  font-style: italic;
+  padding-top: var(--spacing-sm);
+  flex: 1;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid var(--color-sage);
+}
+
+.testimonial-author strong {
+  font-size: 0.95rem;
+  color: var(--color-verde-oscuro);
+  font-family: var(--font-heading);
+}
+
+.testimonial-author span {
+  font-size: 0.8rem;
+  color: var(--color-texto-suave);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    max-width: 540px;
+    margin-inline: auto;
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-grid {
+    gap: 1rem;
+  }
+
+  .testimonial-card {
+    padding: 1.25rem;
+  }
+
+  .testimonial-card::before {
+    font-size: 2.5rem;
+    top: -0.5rem;
+    left: 0.75rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.95rem;
+  }
+
+  .testimonial-author strong {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-author span {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-card {
+    padding: 1rem;
+  }
+
+  .testimonial-card::before {
+    font-size: 2rem;
+    left: 0.5rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+  }
+}

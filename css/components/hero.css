@@ -1,0 +1,204 @@
+/* ============================================================
+   HERO SECTION — Parallax Botánico
+   ============================================================ */
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(
+    160deg,
+    var(--color-crema) 0%,
+    #EEF4E8 40%,
+    #F5EFE8 100%
+  );
+}
+
+/* ---- Contenedor de elementos parallax ---- */
+.hero-parallax-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.parallax-el {
+  position: absolute;
+  opacity: 0.65;
+  user-select: none;
+  will-change: transform;
+}
+
+/* Posiciones de los elementos botánicos */
+.parallax-el:nth-child(1) {
+  top: -5%;
+  left: -5%;
+  width: clamp(200px, 35vw, 480px);
+}
+
+.parallax-el:nth-child(2) {
+  bottom: -10%;
+  left: 5%;
+  width: clamp(150px, 25vw, 350px);
+}
+
+.parallax-el:nth-child(3) {
+  top: 10%;
+  right: -3%;
+  width: clamp(180px, 30vw, 400px);
+}
+
+.parallax-el.parallax-right:nth-child(4) {
+  bottom: 5%;
+  right: 8%;
+  width: clamp(120px, 18vw, 250px);
+}
+
+/* ---- Contenido hero ---- */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-block: var(--spacing-2xl);
+}
+
+.hero-pretitle {
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  color: var(--color-verde-medio);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-sm);
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.25rem, 6vw, 4rem);
+  color: var(--color-verde-oscuro);
+  line-height: 1.2;
+  margin-bottom: var(--spacing-md);
+  max-width: 15ch;
+  margin-inline: auto;
+}
+
+.hero-title em {
+  color: var(--color-verde-medio);
+  font-style: italic;
+}
+
+.hero-claim {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  color: var(--color-texto-suave);
+  font-style: italic;
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.5;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ---- Tablet ---- */
+@media (max-width: 1024px) {
+  .hero-section {
+    min-height: 85vh;
+  }
+
+  .hero-pretitle {
+    font-size: 0.85rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+
+  .hero-claim {
+    font-size: clamp(1rem, 2.2vw, 1.3rem);
+  }
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 85vh;
+  }
+
+  .hero-parallax-bg {
+    opacity: 0.35;
+  }
+
+  .hero-content {
+    padding-block: 2rem;
+  }
+
+  .hero-pretitle {
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.5rem, 4.5vw, 2.5rem);
+    margin-bottom: 1rem;
+  }
+
+  .hero-claim {
+    font-size: clamp(0.95rem, 2vw, 1.15rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
+    padding: 0.85rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 80vh;
+  }
+
+  .hero-parallax-bg {
+    opacity: 0.3;
+  }
+
+  .hero-content {
+    padding-block: 1.5rem;
+  }
+
+  .hero-pretitle {
+    font-size: 0.75rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.35rem, 4vw, 2rem);
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-claim {
+    font-size: clamp(0.9rem, 1.8vw, 1rem);
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-ctas {
+    gap: 0.6rem;
+  }
+
+  .hero-ctas .btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,222 @@
+/* ============================================================
+   QUIÉNES SOMOS — Marta Gadal
+   ============================================================ */
+
+.about-section {
+  padding-block: var(--spacing-2xl);
+  background: linear-gradient(160deg, var(--color-crema) 0%, #EEF4E8 100%);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+/* ---- Imagen ---- */
+.about-image {
+  position: relative;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  border-radius: var(--border-radius-card);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.about-badge {
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  background-color: var(--color-verde-oscuro);
+  color: var(--color-blanco);
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(45, 90, 39, 0.4);
+}
+
+.badge-number {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.badge-text {
+  font-size: 0.65rem;
+  line-height: 1.2;
+  opacity: 0.9;
+}
+
+/* ---- Contenido ---- */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.about-content .section-title {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.about-roles {
+  font-size: 0.9rem;
+  color: var(--color-verde-medio);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+.about-bio {
+  font-size: 1.05rem;
+  color: var(--color-texto);
+  line-height: 1.7;
+}
+
+/* ---- Credenciales ---- */
+.credentials {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 0.75rem;
+  padding: var(--spacing-md);
+  border-left: 4px solid var(--color-verde-medio);
+}
+
+.credentials-title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--color-verde-oscuro);
+  margin-bottom: var(--spacing-xs);
+}
+
+.credentials-list li {
+  font-size: 0.875rem;
+  color: var(--color-texto-suave);
+  padding: 0.2rem 0;
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.credentials-list li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  font-size: 0.6rem;
+  color: var(--color-dorado);
+  top: 0.3rem;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .about-image {
+    max-width: 350px;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .about-image {
+    max-width: 280px;
+    margin-inline: auto;
+  }
+
+  .about-image img {
+    max-width: 100%;
+  }
+
+  .about-badge {
+    width: 75px;
+    height: 75px;
+    bottom: -0.75rem;
+    right: -0.75rem;
+  }
+
+  .badge-number {
+    font-size: 1.4rem;
+  }
+
+  .badge-text {
+    font-size: 0.6rem;
+  }
+
+  .about-content .section-title {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  .about-roles {
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  .about-bio {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .credentials {
+    padding: 1rem;
+  }
+
+  .credentials-title {
+    font-size: 0.9rem;
+  }
+
+  .credentials-list li {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-image {
+    max-width: 240px;
+    margin-inline: auto;
+  }
+
+  .about-badge {
+    width: 65px;
+    height: 65px;
+  }
+
+  .badge-number {
+    font-size: 1.2rem;
+  }
+
+  .badge-text {
+    font-size: 0.55rem;
+  }
+
+  .about-content .section-title {
+    font-size: 1.3rem;
+  }
+
+  .about-roles {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .about-bio {
+    font-size: 0.9rem;
+  }
+}
