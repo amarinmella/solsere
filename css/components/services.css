@@ -201,6 +201,15 @@
   margin-top: auto;
 }
 
+/* ---- Nota de pago ---- */
+.service-card__payment-note {
+  font-size: 0.78rem;
+  color: var(--color-texto-suave);
+  text-align: center;
+  font-style: italic;
+  margin-top: -0.25rem;
+}
+
 /* ---- Responsive ---- */
 @media (max-width: 1024px) {
   .services-grid {
