@@ -33,10 +33,23 @@
 /* ---- Logo ---- */
 .nav-logo {
   display: flex;
-  flex-direction: column;
-  line-height: 1.1;
+  align-items: center;
+  gap: 0.6rem;
   text-decoration: none;
   flex-shrink: 0;
+}
+
+.nav-logo-img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.nav-logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
 }
 
 .logo-text {
@@ -181,6 +194,11 @@
 @media (max-width: 480px) {
   .nav-container {
     height: 65px;
+  }
+
+  .nav-logo-img {
+    width: 32px;
+    height: 32px;
   }
 
   .logo-text {
