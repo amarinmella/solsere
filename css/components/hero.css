@@ -37,8 +37,8 @@
 .parallax-logo {
   top: 50%;
   left: 50%;
-  width: clamp(280px, 32vw, 480px);
-  opacity: 0.14;
+  width: clamp(480px, 60vw, 900px);
+  opacity: 0.16;
   transform: translate(-50%, -50%) translateY(var(--parallax-y));
 }
 
