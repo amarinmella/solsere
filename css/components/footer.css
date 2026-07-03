@@ -35,6 +35,7 @@
 .footer-logo-text {
   display: flex;
   flex-direction: column;
+  line-height: 1.1;
 }
 
 .footer-brand .logo-text {
@@ -46,7 +47,6 @@
 .footer-tagline {
   font-size: 0.875rem;
   color: var(--color-sage);
-  margin-top: 0.35rem;
   font-style: italic;
 }
 
