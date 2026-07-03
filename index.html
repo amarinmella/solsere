@@ -6,13 +6,17 @@
   <meta name="description" content="Solsere — Educación emocional aplicada al aprendizaje. Clases Online, Terapias Florales y Enfoque Integrativo con Marta Gadal. 20+ años acompañando tu bienestar.">
   <title>Solsere — Educación emocional aplicada al aprendizaje</title>
 
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+
   <!-- Preconnect Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Calendly Widget CSS -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <!-- Calendly Widget CSS (no bloqueante: solo se necesita al abrir el popup) -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"></noscript>
 
   <!-- CSS principal -->
   <link rel="stylesheet" href="css/main.css">
@@ -31,7 +35,10 @@
   <header class="site-header" id="site-header">
     <div class="container nav-container">
       <a href="#inicio" class="nav-logo" aria-label="Solsere — Inicio">
-        <img src="assets/images/hero/logo-solsere.png" alt="" class="nav-logo-img" aria-hidden="true">
+        <picture>
+          <source srcset="assets/images/hero/logo-solsere-icon.webp" type="image/webp">
+          <img src="assets/images/hero/logo-solsere-icon.png" alt="" class="nav-logo-img" aria-hidden="true" width="96" height="96">
+        </picture>
         <span class="nav-logo-text">
           <span class="logo-text">SolSere</span>
           <span class="logo-tagline">Donde el bienestar emocional impulsa el aprendizaje</span>
@@ -56,7 +63,10 @@
   <!-- ==================== HERO ==================== -->
   <section id="inicio" class="hero-section">
     <div class="hero-parallax-bg">
-      <img src="assets/images/hero/logo-solsere.png" alt="" aria-hidden="true" class="parallax-el parallax-logo" data-parallax="0.2" loading="eager">
+      <picture>
+        <source srcset="assets/images/hero/logo-solsere.webp" type="image/webp">
+        <img src="assets/images/hero/logo-solsere.png" alt="" aria-hidden="true" class="parallax-el parallax-logo" data-parallax="0.2" loading="eager">
+      </picture>
     </div>
     <div class="container hero-content">
       <p class="hero-pretitle">20+ años acompañando el bienestar académico</p>
@@ -187,7 +197,10 @@
   <section id="quienes-somos" class="about-section">
     <div class="container about-grid">
       <div class="about-image">
-        <img src="assets/images/about/marta-gadal.jpg" alt="Marta Gadal — Profesora de Química, Coach Educativo y Especialista en Terapias Florales" loading="lazy" width="800" height="1075">
+        <picture>
+          <source srcset="assets/images/about/marta-gadal.webp" type="image/webp">
+          <img src="assets/images/about/marta-gadal.jpg" alt="Marta Gadal — Profesora de Química, Coach Educativo y Especialista en Terapias Florales" loading="lazy" width="800" height="1075">
+        </picture>
         <div class="about-badge">
           <span class="badge-number">20+</span>
           <span class="badge-text">años de<br>experiencia</span>
@@ -290,7 +303,10 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <div class="footer-logo">
-          <img src="assets/images/hero/logo-solsere.png" alt="" class="footer-logo-img" aria-hidden="true">
+          <picture>
+            <source srcset="assets/images/hero/logo-solsere-icon.webp" type="image/webp">
+            <img src="assets/images/hero/logo-solsere-icon.png" alt="" class="footer-logo-img" aria-hidden="true" width="96" height="96">
+          </picture>
           <div class="footer-logo-text">
             <span class="logo-text">SolSere</span>
             <p class="footer-tagline">Donde el bienestar emocional impulsa el aprendizaje</p>
