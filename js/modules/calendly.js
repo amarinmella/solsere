@@ -1,14 +1,11 @@
 /*
   Calendly integration — Popup Widget
 
-  Antes de publicar, reemplaza este placeholder con la URL real
-  del Event Type único de la cuenta de Marta Gadal en Calendly
-  (usado para coordinar tanto Clases Online como Equilibrio Emocional).
-
-  Checklist pre-deploy:
-  - [ ] CALENDLY_LINK → URL real del Event Type "Coordinación de horarios"
+  Event Type único de la cuenta de Marta Gadal en Calendly
+  ("Solsere Servicios"), usado para coordinar tanto Clases Online
+  como Equilibrio Emocional.
 */
-const CALENDLY_LINK = 'https://calendly.com/solsere/coordinacion-de-horarios';
+const CALENDLY_LINK = 'https://calendly.com/martagadal/solsere-servicios';
 
 window.CALENDLY_LINK = CALENDLY_LINK;
 
