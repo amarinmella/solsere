@@ -210,13 +210,6 @@
   margin-top: -0.25rem;
 }
 
-/* ---- Espaciadores invisibles (alinean CTAs entre tarjetas con distinta cantidad de botones) ---- */
-.service-card__cta--ghost,
-.service-card__payment-note--ghost {
-  visibility: hidden;
-  pointer-events: none;
-}
-
 /* ---- Responsive ---- */
 @media (max-width: 1024px) {
   .services-grid {
