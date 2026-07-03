@@ -29,31 +29,17 @@
   opacity: 0.65;
   user-select: none;
   will-change: transform;
+  --parallax-y: 0px;
+  transform: translateY(var(--parallax-y));
 }
 
-/* Posiciones de los elementos botánicos */
-.parallax-el:nth-child(1) {
-  top: -5%;
-  left: -5%;
-  width: clamp(200px, 35vw, 480px);
-}
-
-.parallax-el:nth-child(2) {
-  bottom: -10%;
-  left: 5%;
-  width: clamp(150px, 25vw, 350px);
-}
-
-.parallax-el:nth-child(3) {
-  top: 10%;
-  right: -3%;
-  width: clamp(180px, 30vw, 400px);
-}
-
-.parallax-el.parallax-right:nth-child(4) {
-  bottom: 5%;
-  right: 8%;
-  width: clamp(120px, 18vw, 250px);
+/* Logo Solsere como marca de agua central */
+.parallax-logo {
+  top: 50%;
+  left: 50%;
+  width: clamp(280px, 32vw, 480px);
+  opacity: 0.14;
+  transform: translate(-50%, -50%) translateY(var(--parallax-y));
 }
 
 /* ---- Contenido hero ---- */

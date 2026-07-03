@@ -6,7 +6,7 @@ function updateParallax() {
   const scrollY = window.scrollY;
   document.querySelectorAll('[data-parallax]').forEach(el => {
     const speed = parseFloat(el.dataset.parallax) || 0.3;
-    el.style.transform = `translateY(${scrollY * speed}px)`;
+    el.style.setProperty('--parallax-y', `${scrollY * speed}px`);
   });
   ticking = false;
 }
@@ -21,7 +21,7 @@ function onScroll() {
 
 function resetParallax() {
   document.querySelectorAll('[data-parallax]').forEach(el => {
-    el.style.transform = '';
+    el.style.removeProperty('--parallax-y');
   });
 }
 
