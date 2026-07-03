@@ -116,6 +116,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: var(--spacing-md);
+  padding-right: 90px;
   gap: var(--spacing-sm);
   flex-wrap: wrap;
 }
@@ -143,6 +144,10 @@
 
   .footer-brand {
     grid-column: 1 / -1;
+  }
+
+  .footer-bottom {
+    padding-right: 80px;
   }
 }
 
@@ -181,6 +186,7 @@
     flex-direction: column;
     text-align: center;
     gap: 0.5rem;
+    padding-right: 0;
   }
 
   .footer-bottom p {
